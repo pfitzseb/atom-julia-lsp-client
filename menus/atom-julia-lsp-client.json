@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle atom-julia-lsp-client",
+        "command": "atom-julia-lsp-client:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "atom-julia-lsp-client",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "atom-julia-lsp-client:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

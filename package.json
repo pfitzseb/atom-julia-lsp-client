@@ -1,0 +1,19 @@
+{
+  "name": "atom-julia-lsp-client",
+  "main": "./lib/atom-julia-lsp-client",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-julia-lsp-client:toggle"
+  },
+  "repository": "https://github.com/atom/atom-julia-lsp-client",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-languageclient": "^0.1.0"
+  }
+}
