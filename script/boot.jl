@@ -6,5 +6,5 @@ using LanguageServer
 conn = STDOUT
 (outRead, outWrite) = redirect_stdout()
 
-server = LanguageServerInstance(STDIN, conn, true)
+server = LanguageServerInstance(STDIN, conn, false)
 run(server)
