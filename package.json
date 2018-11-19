@@ -3,15 +3,14 @@
   "main": "./lib/atom-julia-lsp-client",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/atom/atom-julia-lsp-client",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.1.0"
+    "atom-languageclient": "^0.9.8"
   },
   "consumedServices": {
     "linter-indie": {
@@ -19,9 +18,9 @@
         "2.0.0": "consumeLinterV2"
       }
     },
-    "nuclide-datatip.provider": {
+    "datatip": {
       "versions": {
-        "0.0.0": "consumeDatatip"
+        "0.1.0": "consumeDatatip"
       }
     }
   },
@@ -31,24 +30,29 @@
         "2.0.0": "provideAutocomplete"
       }
     },
-    "nuclide-code-format.provider": {
+    "code-format.range": {
       "versions": {
-        "0.0.0": "provideCodeFormat"
+        "0.1.0": "provideCodeFormat"
       }
     },
-    "nuclide-definition-provider": {
+    "code-highlight": {
       "versions": {
-        "0.0.0": "provideDefinitions"
+        "0.1.0": "provideCodeHighlight"
       }
     },
-    "nuclide-find-references.provider": {
+    "definitions": {
       "versions": {
-        "0.0.0": "provideFindReferences"
+        "0.1.0": "provideDefinitions"
       }
     },
-    "nuclide-outline-view": {
+    "find-references": {
       "versions": {
-        "0.0.0": "provideOutlines"
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
       }
     }
   }

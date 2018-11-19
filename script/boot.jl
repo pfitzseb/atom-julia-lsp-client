@@ -1,10 +1,5 @@
-using Compat
-using JSON
-using URIParser
 using LanguageServer
+using SymbolServer
 
-conn = STDOUT
-(outRead, outWrite) = redirect_stdout()
-
-server = LanguageServerInstance(STDIN, conn, false)
+server = LanguageServerInstance(stdin, stdout, true, expanduser("~/.julia/environments/v1.0"), "", Dict())
 run(server)
