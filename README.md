@@ -1,7 +1,11 @@
-# atom-julia-lsp-client package
+# Atom Language Client for Julia
 
-Install `atom-ide-ui` and `linter` for some working UI elements.
+This package requires `atom-ide-ui` to be installed (either via `apm install atom-ide-ui`
+or with the Atom UI).
 
-`Pkg.add("LanguageServer")` and `Pkg.checkout("LanguageServer")` are necessary to get this running.
-For diagnostics, set `atom.config.set('core.debugLSP', true)` in `./lib/atom-julia-lsp-client.js` (that
-might or might not kill performance though).
+On the Julia side you should be able to set things up correctly with
+```
+pkg> add CSTParser#master DocumentFormat#master LanguageServer#master StaticLint#master SymbolServer#master
+```
+
+Also make sure to set the path to your Julia binary correctly in this package's settings.
